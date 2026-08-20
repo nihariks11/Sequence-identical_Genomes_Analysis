@@ -1,4 +1,12 @@
 # Sequence-identical_Genomes_Analysis
+Public microbial genome repositories (NCBI) contain thousands of sequence-identical genome assemblies assigned to
+different taxonomic lineages, potentially inflating microbial diversity and introducing bias into comparative genomics,
+metagenomics, and pathogen surveillance. By systematically screening 729,559 NCBI prokaryotic genomes using
+assembly metadata filtering followed by MD5 hash-based sequence validation, we identified 3,334 sets of completely
+identical genome assemblies with taxonomic inconsistencies. We propose a simple redundancy-aware genome
+submission workflow that combines assembly-level screening with cryptographic sequence identity checks to flag
+identical submissions, harmonize metadata, and strengthen the accuracy, transparency, and reliability of public
+genomic databases.
 
 #### Step 1: Filtering based on assembly features: GC%, Genome Size and Number of Scaffolds (Filter 1)
 
