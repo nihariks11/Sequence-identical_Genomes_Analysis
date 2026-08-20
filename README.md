@@ -2,9 +2,9 @@
 
 #### Step 1: Filtering based on assembly features: GC%, Genome Size and Number of Scaffolds (Filter 1)
 
-##### Step 1a: Genome size information (in bp) extracted again
+###### Step 1a: Genome size information (in bp) extracted again
 
-##### Step 1b: Finding duplicates based on accurate genome size and adding set wise counters
+###### Step 1b: Finding duplicates based on accurate genome size and adding set wise counters
 
 
 #### Step 2: Downloading genomes
