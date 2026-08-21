@@ -8,7 +8,7 @@ submission workflow that combines assembly-level screening with cryptographic se
 identical submissions, harmonize metadata, and strengthen the accuracy, transparency, and reliability of public
 genomic databases.
 
-### Step 1: Filtering based on assembly features (Filter 1)
+### <ins>Step 1: Filtering based on assembly features (Filter 1)</ins>
 This is the initial filtering step to find sets of 2 or more genomes that have identical genome features including GC%, Genome Size and Number of Scaffolds. 
 <br><br> **SCRIPT**: assembly_features_duplicates_01.sh
 <br> **INPUT**: The input for this is the data for all prokaryotes on NCBI including 729559 genomes and can be downloaded from https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt.   
