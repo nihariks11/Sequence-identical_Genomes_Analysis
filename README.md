@@ -14,13 +14,13 @@ This is the initial filtering step to find sets of 2 or more genomes that have i
 <br> **INPUT**: The input for this is the data for all prokaryotes on NCBI including 729559 genomes and can be downloaded from https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt.   
 **OUTPUT**: Step_1_Assembly_feature_filtering/output_files/duplicates.txt
 
-      ##### Step 1a: Genome size information (in bp) extracted again
+##### Step 1a: Genome size information (in bp) extracted again
 The accurate genome size in base pairs was required because the prokaryotes.txt file has size mentioned in Mb which could be a rounded off figure. The genome size was obtained again from NCBI using the Entrez Direct toolkit.  
 <br> **SCRIPT**: full_genome_size_02.sh
 <br> **INPUT**: Step_1_Assembly_feature_filtering/output_files/GenBank_IDs.txt
 <br> **OUTPUT**: Step_1_Assembly_feature_filtering/output_files/Full_genome_sizes.tsv
 
-      ##### Step 1b: Finding duplicates based on accurate genome size and adding set wise counters
+##### Step 1b: Finding duplicates based on accurate genome size and adding set wise counters
 
 
 #### Step 2: Downloading genomes
