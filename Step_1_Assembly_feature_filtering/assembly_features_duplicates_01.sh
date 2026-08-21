@@ -39,4 +39,5 @@ END {
     for (k in count)
         if (count[k] > 1)
             printf "%s", lines[k]
-}' prokaryotes.txt > duplicates.tsv
+}' prokaryotes.txt > output_files/duplicates.tsv
+

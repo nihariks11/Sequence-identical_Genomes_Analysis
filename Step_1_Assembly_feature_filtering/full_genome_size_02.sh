@@ -16,7 +16,7 @@
 # ============================================================
 
 
-for i in $(cat only_GCA_IDs.txt); do  
+for i in $(cat input_files/GenBank_IDs.txt); do  
     size=$(timeout 60s esearch -db assembly -query "$i" \
         | esummary \
         | xtract -pattern Stat -if @category -equals total_length -element . \
@@ -27,4 +27,4 @@ for i in $(cat only_GCA_IDs.txt); do
     else
         echo -e "$i\tNA"
     fi
-done > Full_genome_sizes.tsv
+done > output_files/Full_genome_sizes.tsv
