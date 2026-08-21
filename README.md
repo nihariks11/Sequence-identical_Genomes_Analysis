@@ -57,6 +57,17 @@ The duplicates here are being identified using accurate genome size in bp and th
 ---
 
 ## Step 2: Downloading Genomes
+11,878 genomes from the first filtered output were downloaded in their respective set wise folders from NCBI. The `mdchecksums.txt` file was also downloaded for each genome from NCBI to verify the integrity of the downloaded files.
+
+**Script:** `genomes_download.sh`
+
+**Input:**
+`Step_2_Downloading_genomes/input_files/sets_GenBank_IDs.tsv`
+
+**Output:**
+`Step_2_Downloading_genomes/output_files/
+Output folders for SETS 1-5 have been presented here as an example
+**Total SET folders:**5603
 
 ---
 
