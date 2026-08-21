@@ -53,14 +53,22 @@ The duplicates here are being identified using accurate genome size in bp and th
 
 **Input:** `Step_2_Downloading_genomes/input_files/sets_GenBank_IDs.tsv`
 
-**Output:**
-`Step_2_Downloading_genomes/output_files/`
+**Output:** `Step_2_Downloading_genomes/output_files/`
 <br> Output folders for SETS 1-5 have been presented here as an example.
-<br> **Total SET folders:** 5603
+<br> **Total SET folders:** 5603 (all folders have not been uploaded)
 
 ---
 
 ## Step 3: MD5-based Comparison to Identify Sequence-identical Genomes (Filter 2)
+MD5 checksum based sequence comparison was performed after concatenating removing the fasta headers and concatenating the sequence of each genome in each set by removing line breaks. This is the second filter which actually tells if the sequences within the set are identical. 
+
+**Script:** `md5_sequence_comparison.sh`
+
+**Input:** Set wise directories created based on **Filter 1**. 
+Example directories: `Step_2_Downloading_genomes/output_files/`
+
+**Output:** `Step_3_MD5_based_comparison/output_files/md5_results.txt`
+
 
 ---
 
