@@ -5,13 +5,16 @@
 # Use NCBI Entrez Direct to retrieve the full genome sizes of the assemblies that have been identified as duplicates in the previous step. 
 #
 # Input:
-# GenBank assembly IDs (GCA_*) from duplicates.txt     
+# GenBank_IDs.txt (GenBank assembly IDs (GCA_*) extracted from duplicates.txt)     
 #
 # Output:
 #  Full_genome_sizes.tsv
 #
 # Usage:
 #   bash full_genome_size_02.sh
+#
+# Dependencies:
+# - NCBI Entrez Direct (EDirect)
 #
 # ============================================================
 
