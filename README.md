@@ -28,8 +28,7 @@ The accurate genome size in base pairs was required because the `prokaryotes.txt
 
 **Input:**
 
-`Step_1_Assembly_feature_filtering/output_files/GenBank_IDs.txt`
-
+`Step_1_Assembly_feature_filtering/input_files/GenBank_IDs.txt`
 **Number of IDs:** 14,271
 
 **Output:**
@@ -42,6 +41,18 @@ The accurate genome size in base pairs was required because the `prokaryotes.txt
 
 Similar as above, this step finds sets of **2 or more genomes** that have identical GC%, **Full Genome Size** and Number of Scaffolds.
 The only difference from Step 1 is that here duplicates are being identified using accurate genome size in bp. 
+
+**Script:** `duplicates_full_genome_size_03.sh`
+
+**Input:**
+
+`Step_1_Assembly_feature_filtering/input_files/full_genome_size_mapped.tsv`
+
+**Output:**
+
+`Step_1_Assembly_feature_filtering/output_files/duplicates_full_genome_size.tsv`
+**Number of genomes:** 11,878
+
 
 ---
 
