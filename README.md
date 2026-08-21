@@ -39,8 +39,10 @@ The accurate genome size in base pairs was required because the `prokaryotes.txt
 ---
 
 ### Step 1b: Finding Duplicates Based on Accurate Genome Size
+
 Similar as above, this step finds sets of **2 or more genomes** that have identical GC%, **Full Genome Size** and Number of Scaffolds.
 The only difference from Step 1 is that here duplicates are being identified using accurate genome size in bp. 
+
 ---
 
 ## Step 2: Downloading Genomes
