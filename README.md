@@ -14,9 +14,7 @@ This is the initial filtering step to find sets of **2 or more genomes** that ha
 The input for this is the data for all prokaryotes on NCBI, including **729,559 genomes**, and can be downloaded from:
 https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt
 
-**Output:**
-
-`Step_1_Assembly_feature_filtering/output_files/duplicates.txt`
+**Output:** `Step_1_Assembly_feature_filtering/output_files/duplicates.txt`
 
 ---
 
@@ -26,14 +24,10 @@ The accurate genome size in base pairs was required because the `prokaryotes.txt
 
 **Script:** `full_genome_size_02.sh`
 
-**Input:**
-
-`Step_1_Assembly_feature_filtering/input_files/GenBank_IDs.txt`
+**Input:** `Step_1_Assembly_feature_filtering/input_files/GenBank_IDs.txt`
 **Number of IDs:** 14,271
 
-**Output:**
-
-`Step_1_Assembly_feature_filtering/output_files/Full_genome_sizes.tsv`
+**Output:** `Step_1_Assembly_feature_filtering/output_files/Full_genome_sizes.tsv`
 
 ---
 
@@ -44,13 +38,9 @@ The duplicates here are being identified using accurate genome size in bp and th
 
 **Script:** `duplicates_full_genome_size_03.sh`
 
-**Input:**
+**Input:** `Step_1_Assembly_feature_filtering/input_files/full_genome_size_mapped.tsv`
 
-`Step_1_Assembly_feature_filtering/input_files/full_genome_size_mapped.tsv`
-
-**Output:**
-
-`Step_1_Assembly_feature_filtering/output_files/duplicates_full_genome_size.tsv`
+**Output:** `Step_1_Assembly_feature_filtering/output_files/duplicates_full_genome_size.tsv`
 **Number of genomes:** 11,878
 
 
@@ -61,13 +51,12 @@ The duplicates here are being identified using accurate genome size in bp and th
 
 **Script:** `genomes_download.sh`
 
-**Input:**
-`Step_2_Downloading_genomes/input_files/sets_GenBank_IDs.tsv`
+**Input:** `Step_2_Downloading_genomes/input_files/sets_GenBank_IDs.tsv`
 
 **Output:**
-`Step_2_Downloading_genomes/output_files/
-Output folders for SETS 1-5 have been presented here as an example
-**Total SET folders:**5603
+`Step_2_Downloading_genomes/output_files/`
+Output folders for SETS 1-5 have been presented here as an example.
+**Total SET folders:** 5603
 
 ---
 
