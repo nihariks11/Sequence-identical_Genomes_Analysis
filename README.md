@@ -62,7 +62,7 @@ The duplicates here are being identified using accurate genome size in bp and th
 ## Step 3: MD5-based Comparison to Identify Sequence-identical Genomes (Filter 2)
 MD5 checksum based sequence comparison was performed after concatenating removing the fasta headers and concatenating the sequence of each genome in each set by removing line breaks. This is the second filter which actually tells if the sequences within the set are identical. 
 
-**Script:** `md5_sequence_comparison.sh`
+**Script:** `Step_3_MD5_based_comparison/md5_sequence_comparison.sh`
 
 **Input:** Set wise directories created based on **Filter 1**. 
 Example directories: `Step_2_Downloading_genomes/output_files/`
@@ -83,6 +83,3 @@ Example directories: `Step_2_Downloading_genomes/output_files/`
 ## Step 6: Metadata Retrieval of Sequence-identical Genomes
 
 
-
-
-#### Step 6: Metadata retrieval of sequence identical genomes
