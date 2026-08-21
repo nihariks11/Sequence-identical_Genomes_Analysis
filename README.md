@@ -55,8 +55,8 @@ The duplicates here are being identified using accurate genome size in bp and th
 
 **Output:**
 `Step_2_Downloading_genomes/output_files/`
-Output folders for SETS 1-5 have been presented here as an example.
-**Total SET folders:** 5603
+<br> Output folders for SETS 1-5 have been presented here as an example.
+<br> **Total SET folders:** 5603
 
 ---
 
