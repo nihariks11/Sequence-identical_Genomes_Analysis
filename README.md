@@ -105,7 +105,7 @@ The input file was created after some manual edits on MS Excel:
 ## Step 5: RefSeq Counterpart Check
 GenBank assembly accessions were mapped to their corresponding RefSeq assembly information using the NCBI assembly summary data. This was performed at each filter to identify all the cases of sequence identical genomes that exist on RefSeq. The values have been reported in Figure 1A as well.  
 
-Script: `refseq_counterpart_mapping.R`
+**Script:** `refseq_counterpart_mapping.R`
 
 **Input:**
 1. `Step_5_RefSeq_counterparts/input_files/GenBank_IDs_from_prok.txt` GenBank assembly accession information from the initial prokaryotic genome dataset.
@@ -135,20 +135,20 @@ Metadata retrieved: Assembly accession, BioSample accession, Organism, Submitter
 
 ---
 ### Step 6a: Metadata Retrieval
-Script: `Step_6_Metadata_comparison/metadata_extraction.sh` 
+**Script:** `Step_6_Metadata_comparison/metadata_extraction.sh` 
 
 **Input:** `Step_6_Metadata_comparison/input_files/GenBank_IDs_filter2.txt` 
 
 **Output:** `Step_6_Metadata_comparison/output_files/metadata.tsv`
 
 ---
-### Step 6a: Set-wise metadata comparison
+### Step 6b: Set-wise metadata comparison
+**Script:** `Step_6_Metadata_comparison/metadata_comparison.R` 
 
-Script: `Step_6_Metadata_comparison/` 
+**Input:** `Step_6_Metadata_comparison/input_files/metadata_input_for_comparison.txt` The set counters and RefSeq prevalence was mapped onto this file. 
 
-**Input:** `Step_6_Metadata_comparison/input_files/` 
+**Output:** `Step_6_Metadata_comparison/output_files/metadata_comparison_by_set.txt` Each metadata category was compared and presented set wise as "Same" or "Different"
 
-**Output:** `Step_6_Metadata_comparison/output_files/`
 
 
 
