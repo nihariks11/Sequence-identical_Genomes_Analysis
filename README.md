@@ -75,7 +75,7 @@ Example directories: `Step_2_Downloading_genomes/output_files/`
 
 ### Step 4a: Assigning NCBI taxonomy and mapping set status
 
-**Script:** `Step_4_Taxonomic_comparison/input_files/Taxonomic_assignment_and_set_status.R`
+**Script:** `Step_4_Taxonomic_comparison/Taxonomic_assignment_and_set_status.R`
 
 **Input:** 
 1. `Step_4_Taxonomic_comparison/input_files/rankedlineage_edited.dmp` 
@@ -89,9 +89,14 @@ The Taxdmp folder was downloaded on 25/08/2025 from `https://ftp.ncbi.nih.gov/pu
 
 ### Step 4b: Set wise taxonomy comparison
 
-**Script:**
-**Input:** 
-**Output:**
+Sequence-identical genome sets i.e., **6754 genomes assigned to 3334 sets** were filtered out from the md5 comparsion results (Step3) and the taxonomic rank at which differences occured were identified.
+
+**Script:** `Step_4_Taxonomic_comparison/set_wise_taxonomy_comparison.R`
+**Input:**`Step_4_Taxonomic_comparison/input_files/identical_set_status.tsv` 
+The input file was created after some manual edits on MS Excel:
+1. to filter out the sequence identical data
+2. create the species and strain level taxonomy columns per genome by splitting the organism name - because the ranked lineage data from NCBI provides classification until Genus level only 
+**Output:**`Step_4_Taxonomic_comparison/output_files/Set_wise_tax_level_comparsion.xlsx` 
 
 ---
 
