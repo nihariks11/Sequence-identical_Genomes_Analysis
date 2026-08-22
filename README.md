@@ -110,9 +110,11 @@ GenBank assembly accessions were mapped to their corresponding RefSeq assembly i
 **Input:**
 1. `Step_5_RefSeq_counterparts/input_files/GenBank_IDs_from_prok.txt` GenBank assembly accession information from the initial prokaryotic genome dataset.
 
-2. `Step_5_RefSeq_counterparts/input_files/GenBank_ID_org_RefSeq_from_assembly_summary.txt`
-   This file was derived from https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt by
-   using the command cut -f1,8,18 assembly_summary_genbank.txt > GenBank_ID_org_RefSeq_from_assembly_summary.txt
+2. `Step_5_RefSeq_counterparts/input_files/GenBank_ID_org_RefSeq_from_assembly_summary.txt`  
+   This file was derived from the NCBI `assembly_summary_genbank.txt` file using the following command:
+
+   ```bash
+   cut -f1,8,18 assembly_summary_genbank.txt > GenBank_ID_org_RefSeq_from_assembly_summary.txt
    
 3. `Step_5_RefSeq_counterparts/input_files/GenBank_IDs_after_first_filter.txt`  
   
