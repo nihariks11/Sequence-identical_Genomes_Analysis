@@ -129,6 +129,11 @@ Script: `refseq_counterpart_mapping.R`
 
 ---
 
-## Step 6: Metadata Retrieval of Sequence-identical Genomes
+## Step 6: Metadata Retrieval of Sequence-identical Genomes and Comparison
+Metadata was retrieved for sequence-identical genome assemblies identified using the NCBI Datasets command-line tool and for each genome set-wise comparison was performed.  
+Metadata retrieved: Assembly accession, BioSample accession, Organism, Submitter, Sequencing technology, Submission date, Isolation source, Geographic location, Collection date, Host
 
+---
+### Step 6a: Metadata Retrieval
+Script: metadata_extraction.sh 
 
