@@ -121,11 +121,11 @@ Script: `refseq_counterpart_mapping.R`
 4. `Step_5_RefSeq_counterparts/input_files/GenBank_IDs_after_second_filter.txt`  
   
 **Output:**
-1. `RefSeq_leftjoin.xlsx`  RefSeq information mapped to the initial GenBank dataset.
+1. `Step_5_RefSeq_counterparts/output_files/RefSeq_leftjoin.xlsx`  RefSeq information mapped to the initial GenBank dataset.
 
-2. `first_filter_RefSeq_mapped.xlsx` RefSeq information mapped to the dataset after the first filtering step.
+2. `Step_5_RefSeq_counterparts/output_files/first_filter_RefSeq_mapped.xlsx` RefSeq information mapped to the dataset after the first filtering step.
 
-3. `second_filter_RefSeq_mapped.xlsx` RefSeq information mapped to the dataset after the second filtering step.
+3. `Step_5_RefSeq_counterparts/output_files/second_filter_RefSeq_mapped.xlsx` RefSeq information mapped to the dataset after the second filtering step.
 
 ---
 
@@ -135,5 +135,21 @@ Metadata retrieved: Assembly accession, BioSample accession, Organism, Submitter
 
 ---
 ### Step 6a: Metadata Retrieval
-Script: metadata_extraction.sh 
+Script: `Step_6_Metadata_comparison/metadata_extraction.sh` 
+
+**Input:** `Step_6_Metadata_comparison/input_files/GenBank_IDs_filter2.txt` 
+
+**Output:** `Step_6_Metadata_comparison/output_files/metadata.tsv`
+
+---
+### Step 6a: Set-wise metadata comparison
+
+Script: `Step_6_Metadata_comparison/` 
+
+**Input:** `Step_6_Metadata_comparison/input_files/` 
+
+**Output:** `Step_6_Metadata_comparison/output_files/`
+
+
+
 
