@@ -79,7 +79,7 @@ Example directories: `Step_2_Downloading_genomes/output_files/`
 
 **Input:** 
 1. `Step_4_Taxonomic_comparison/input_files/rankedlineage_edited.dmp` 
-The Taxdmp folder was downloaded on 25/08/2025 from `https://ftp.ncbi.nih.gov/pub/taxonomy/`. The The Ranked Lineage file was utilized and its separator was edited to remove tabs and retain only "|".
+The Taxdmp folder was downloaded on 25/08/2025 from `https://ftp.ncbi.nih.gov/pub/taxonomy/`. The Ranked Lineage file was utilized and its separator was edited to remove tabs and retain only "|".
 2. `Step_4_Taxonomic_comparison/input_files/duplicates_full_genome_size.xlsx`. This file was derived from Step 1.
 3. `Step_4_Taxonomic_comparison/input_files/md5_results_only_SET_status.txt`. This file was derived from Step 3.
 
