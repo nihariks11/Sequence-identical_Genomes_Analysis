@@ -69,10 +69,29 @@ Example directories: `Step_2_Downloading_genomes/output_files/`
 
 **Output:** `Step_3_MD5_based_comparison/output_files/md5_results.txt`
 
-
 ---
 
 ## Step 4: Taxonomic Assignment and Comparison
+
+### Step 4a: Assigning NCBI taxonomy and mapping set status
+
+**Script:** `Step_4_Taxonomic_comparison/input_files/Taxonomic_assignment_and_set_status.R`
+
+**Input:** 
+1. `Step_4_Taxonomic_comparison/input_files/rankedlineage_edited.dmp` 
+The Taxdmp folder was downloaded on 25/08/2025 from `https://ftp.ncbi.nih.gov/pub/taxonomy/`. The The Ranked Lineage file was utilized and its separator was edited to remove tabs and retain only "|".
+2. `Step_4_Taxonomic_comparison/input_files/duplicates_full_genome_size.xlsx`. This file was derived from Step 1.
+3. `Step_4_Taxonomic_comparison/input_files/md5_results_only_SET_status.txt`. This file was derived from Step 3.
+
+**Output:** `Step_4_Taxonomic_comparison/output_files/TaxID_Set_Status_Mapped.xlsx`
+
+---
+
+### Step 4b: Set wise taxonomy comparison
+
+**Script:**
+**Input:** 
+**Output:**
 
 ---
 
