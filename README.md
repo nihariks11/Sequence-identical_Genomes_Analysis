@@ -14,7 +14,7 @@ This is the initial filtering step to find sets of **2 or more genomes** that ha
 The input for this is the data for all prokaryotes on NCBI, including **729,559 genomes**, and can be downloaded from:
 https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt
 
-**Output:** `Step_1_Assembly_feature_filtering/output_files/duplicates.txt`
+**Output:** `Step_1_Assembly_feature_filtering/output_files/duplicates.tsv`
 
 ---
 
