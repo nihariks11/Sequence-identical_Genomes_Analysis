@@ -92,10 +92,12 @@ The Taxdmp folder was downloaded on 25/08/2025 from `https://ftp.ncbi.nih.gov/pu
 Sequence-identical genome sets i.e., **6754 genomes assigned to 3334 sets** were filtered out from the md5 comparsion results (Step3) and the taxonomic rank at which differences occured were identified.
 
 **Script:** `Step_4_Taxonomic_comparison/set_wise_taxonomy_comparison.R`
+
 **Input:**`Step_4_Taxonomic_comparison/input_files/identical_set_status.tsv` 
 The input file was created after some manual edits on MS Excel:
 1. to filter out the sequence identical data
 2. create the species and strain level taxonomy columns per genome by splitting the organism name - because the ranked lineage data from NCBI provides classification until Genus level only 
+
 **Output:**`Step_4_Taxonomic_comparison/output_files/Set_wise_tax_level_comparsion.xlsx` 
 
 ---
