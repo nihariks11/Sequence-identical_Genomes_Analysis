@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # ============================================================
 # Script: assembly_features_duplicates_01.sh
 #
