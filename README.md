@@ -47,7 +47,7 @@ The duplicates here are being identified using accurate genome size in bp and th
 ---
 
 ## Step 2: Downloading Genomes
-11,878 genomes from the first filtered output were downloaded in their respective set wise folders from NCBI. The `mdchecksums.txt` file was also downloaded for each genome from NCBI to verify the integrity of the downloaded files.
+11,878 genomes from the first filtered output were downloaded in their respective set wise folders from NCBI. The `md5checksums.txt` file was also downloaded for each genome from NCBI to verify the integrity of the downloaded files.
 
 **Script:** `Step_2_Downloading_genomes/genomes_download.sh`
 
@@ -60,7 +60,7 @@ The duplicates here are being identified using accurate genome size in bp and th
 ---
 
 ## Step 3: MD5-based Comparison to Identify Sequence-identical Genomes (Filter 2)
-MD5 checksum based sequence comparison was performed after concatenating removing the fasta headers and concatenating the sequence of each genome in each set by removing line breaks. This is the second filter which actually tells if the sequences within the set are identical. 
+MD5 checksum based sequence comparison was performed after removing the fasta headers and concatenating the sequence of each genome in each set by removing line breaks. This is the second filter which actually tells if the sequences within the set are identical. 
 
 **Script:** `Step_3_MD5_based_comparison/md5_sequence_comparison.sh`
 Note: Run this script from the directory containing the set-wise genome folders.
@@ -90,7 +90,7 @@ The Taxdmp folder was downloaded on 25/08/2025 from https://ftp.ncbi.nih.gov/pub
 
 ### Step 4b: Set wise taxonomy comparison
 
-Sequence-identical genome sets i.e., **6754 genomes assigned to 3334 sets** were filtered out from the md5 comparsion results (Step3) and the taxonomic rank at which differences occured were identified.
+Sequence-identical genome sets i.e., **6754 genomes assigned to 3334 sets** were filtered out from the md5 comparison results (Step3) and the taxonomic rank at which differences occured were identified.
 
 **Script:** `Step_4_Taxonomic_comparison/set_wise_taxonomy_comparison.R`
 
