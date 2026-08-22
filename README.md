@@ -103,6 +103,27 @@ The input file was created after some manual edits on MS Excel:
 ---
 
 ## Step 5: RefSeq Counterpart Check
+GenBank assembly accessions were mapped to their corresponding RefSeq assembly information using the NCBI assembly summary data. This was performed at each filter to identify all the cases of sequence identical genomes that exist on RefSeq. The values have been reported in Figure 1A as well.  
+
+### Script: `refseq_counterpart_mapping.R`
+
+**Input:**
+1. `Step_5_RefSeq_counterparts/input_files/GenBank_IDs_from_prok.txt` GenBank assembly accession information from the initial prokaryotic genome dataset.
+
+2. `Step_5_RefSeq_counterparts/input_files/GenBank_ID_org_RefSeq_from_assembly_summary.txt`
+   This file was derived from https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt by
+   using the command cut -f1,8,18 assembly_summary_genbank.txt > GenBank_ID_org_RefSeq_from_assembly_summary.txt
+   
+3. `Step_5_RefSeq_counterparts/input_files/GenBank_IDs_after_first_filter.txt`  
+  
+4. `Step_5_RefSeq_counterparts/input_files/GenBank_IDs_after_second_filter.txt`  
+  
+**Output:**
+1. `RefSeq_leftjoin.xlsx`  RefSeq information mapped to the initial GenBank dataset.
+
+2. `first_filter_RefSeq_mapped.xlsx` RefSeq information mapped to the dataset after the first filtering step.
+
+3. `second_filter_RefSeq_mapped.xlsx` RefSeq information mapped to the dataset after the second filtering step.
 
 ---
 
