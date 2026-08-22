@@ -115,6 +115,8 @@ GenBank assembly accessions were mapped to their corresponding RefSeq assembly i
 
    ```bash
    cut -f1,8,18 assembly_summary_genbank.txt > GenBank_ID_org_RefSeq_from_assembly_summary.txt
+
+Note: GenBank_ID_org_RefSeq_from_assembly_summary.txt is not included in the repository because the file exceeds GitHub's file-size limit. It can be regenerated from the NCBI assembly_summary_genbank.txt file using the command shown.
    
 3. `Step_5_RefSeq_counterparts/input_files/GenBank_IDs_after_first_filter.txt`  
   
