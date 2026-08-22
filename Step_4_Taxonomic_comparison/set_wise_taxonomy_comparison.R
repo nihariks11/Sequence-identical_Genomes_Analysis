@@ -21,7 +21,7 @@
 #   sets (SetID) and their taxonomic classifications.
 #
 # Output:
-# - Set_wise_tax_level_comparsion_git.xlsx
+# - Set_wise_tax_level_comparsion.xlsx
 #   Excel file containing one row per SetID, the identified
 #   taxonomic level of difference, and the corresponding values
 #   collapsed for the other columns.
@@ -36,7 +36,7 @@ library(dplyr)
 library(writexl)
 library(tidyverse)
 
-df <- read.csv("identical_set_status.tsv", 
+df <- read.csv("input_files/identical_set_status.tsv", 
                header = TRUE, sep = "\t", stringsAsFactors = FALSE)
 
 tax_cols <- c("Superkingdom", "Kingdom", "Phylum", "Class", "Order",
@@ -76,4 +76,4 @@ print(differences, n = Inf)
 #view(differences)
 
 
-write_xlsx(differences,"Set_wise_tax_level_comparsion.xlsx")
+write_xlsx(differences,"output_files/Set_wise_tax_level_comparsion.xlsx")

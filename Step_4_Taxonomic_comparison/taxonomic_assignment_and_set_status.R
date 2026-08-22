@@ -34,14 +34,14 @@ library(tidyverse)
 library(readxl)
 library(writexl)
 
-data <- read_xlsx("duplicates_full_genome_size.xlsx") 
-tax_dmp <- read.csv("rankedlineage_edited.dmp", sep = "|", quote="", F)
-set_status<- read.csv("md5_results_only_SET_status.txt", sep = "\t")
+data <- read_xlsx("input_files/duplicates_full_genome_size.xlsx") 
+tax_dmp <- read.csv("input_files/rankedlineage_edited.dmp", sep = "|", quote="", F)
+set_status<- read.csv("input_files/md5_results_only_SET_status.txt", sep = "\t")
 
 colnames(tax_dmp) <- c('TaxID','Organism_name','C3','Genus','Family','Order','Class','Phylum','C9','Superkingdom','C11')
 
 lj1 <- left_join(data,set_status,by="SetID")
 lj2 <- left_join(lj1,tax_dmp,by="TaxID")
 
-write_xlsx(lj2,"TaxID_Set_Status_Mapped.xlsx")
+write_xlsx(lj2,"output_files/TaxID_Set_Status_Mapped.xlsx")
 

@@ -42,7 +42,7 @@
 #
 # ============================================================
 
-echo -e "Assembly\tBioSample\tOrganism\tSubmitter\tSeqTech\tSubmissionDate\tIsolationSource\tGeoLocName\tCollectionDate\tHost" > metadata.tsv
+echo -e "Assembly\tBioSample\tOrganism\tSubmitter\tSeqTech\tSubmissionDate\tIsolationSource\tGeoLocName\tCollectionDate\tHost" > output_files/metadata.tsv
 
 while read acc; do
 
@@ -63,4 +63,4 @@ datasets summary genome accession "$acc" \
 ]
 | @tsv'
 
-done < GenBank_IDs_Filter2.txt >> metadata.tsv
+done < input_files/GenBank_IDs_filter2.txt >> output_files/metadata.tsv

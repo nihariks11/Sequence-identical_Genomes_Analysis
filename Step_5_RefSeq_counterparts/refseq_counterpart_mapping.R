@@ -44,16 +44,16 @@
 library(tidyverse)
 library(writexl)
 
-dat <- read.csv("GenBank_IDs_from_prok.txt", T,sep ="\t")
-refseq_from_assemb_sum <- read.csv("GenBank_ID_org_RefSeq_from_assembly_summary.txt", T, sep="\t")
+dat <- read.csv("input_files/GenBank_IDs_from_prok.txt", T,sep ="\t")
+refseq_from_assemb_sum <- read.csv("input_files/GenBank_ID_org_RefSeq_from_assembly_summary.txt", T, sep="\t")
 
-first_filt <- read.csv("GenBank_IDs_after_first_filter.txt", T,sep ="\t")
-second_filt <- read.csv("GenBank_IDs_after_second_filter.txt", T,sep ="\t")
+first_filt <- read.csv("input_files/GenBank_IDs_after_first_filter.txt", T,sep ="\t")
+second_filt <- read.csv("input_files/GenBank_IDs_after_second_filter.txt", T,sep ="\t")
 
 lj <- left_join(dat,refseq_from_assemb_sum,by="assembly_accession")
 first <- left_join(first_filt,refseq_from_assemb_sum,by="assembly_accession")
 second <- left_join(second_filt,refseq_from_assemb_sum,by="assembly_accession")
 
-write_xlsx(lj,"RefSeq_leftjoin.xlsx")
-write_xlsx(first,"first_filter_RefSeq_mapped.xlsx")
-write_xlsx(second,"second_filter_RefSeq_mapped.xlsx")
+write_xlsx(lj,"output_files/RefSeq_leftjoin.xlsx")
+write_xlsx(first,"output_files/first_filter_RefSeq_mapped.xlsx")
+write_xlsx(second,"output_files/second_filter_RefSeq_mapped.xlsx")

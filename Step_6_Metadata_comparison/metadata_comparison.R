@@ -29,7 +29,7 @@
 # ============================================================
 
 library(tidyverse)
-df <- read.csv("Metadata_input_for_comparison.txt",sep = "\t",TRUE)
+df <- read.csv("input_files/Metadata_input_for_comparison.txt",sep = "\t",TRUE)
 
 #view(DATA)
 library(dplyr)
@@ -60,7 +60,7 @@ comparison <- df %>%
   )
 
 write.table(comparison,
-            "metadata_comparison_by_set.txt",
+            "output_files/metadata_comparison_by_set.txt",
             sep = "\t",
             quote = FALSE,
             row.names = FALSE)
