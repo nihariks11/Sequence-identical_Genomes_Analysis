@@ -8,7 +8,7 @@ Public microbial genome repositories (NCBI) contain thousands of sequence-identi
 
 This is the initial filtering step to find sets of **2 or more genomes** that have identical genome features, including **GC%, Genome Size and Number of Scaffolds**.
 
-**Script:** `assembly_features_duplicates_01.sh`
+**Script:** `Step_1_Assembly_feature_filtering/assembly_features_duplicates_01.sh`
 
 **Input:**
 The input for this is the data for all prokaryotes on NCBI, including **729,559 genomes**, and can be downloaded from:
@@ -22,7 +22,7 @@ https://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt
 
 The accurate genome size in base pairs was required because the `prokaryotes.txt` file has size mentioned in Mb, which could be a rounded-off figure. The genome size was obtained again from NCBI using the **Entrez Direct toolkit**.
 
-**Script:** `full_genome_size_02.sh`
+**Script:** `Step_1_Assembly_feature_filtering/full_genome_size_02.sh`
 
 **Input:** `Step_1_Assembly_feature_filtering/input_files/GenBank_IDs.txt`
 **Number of IDs:** 14,271
@@ -36,7 +36,7 @@ The accurate genome size in base pairs was required because the `prokaryotes.txt
 Similar as above, this step finds sets of **2 or more genomes** that have identical GC%, **Full Genome Size** and Number of Scaffolds.
 The duplicates here are being identified using accurate genome size in bp and the script also groups genomes into sets and adds counters. 
 
-**Script:** `duplicates_full_genome_size_03.sh`
+**Script:** `Step_1_Assembly_feature_filtering/duplicates_full_genome_size_03.sh`
 
 **Input:** `Step_1_Assembly_feature_filtering/input_files/full_genome_size_mapped.tsv`
 
@@ -49,7 +49,7 @@ The duplicates here are being identified using accurate genome size in bp and th
 ## Step 2: Downloading Genomes
 11,878 genomes from the first filtered output were downloaded in their respective set wise folders from NCBI. The `mdchecksums.txt` file was also downloaded for each genome from NCBI to verify the integrity of the downloaded files.
 
-**Script:** `genomes_download.sh`
+**Script:** `Step_2_Downloading_genomes/genomes_download.sh`
 
 **Input:** `Step_2_Downloading_genomes/input_files/sets_GenBank_IDs.tsv`
 
@@ -105,7 +105,7 @@ The input file was created after some manual edits on MS Excel:
 ## Step 5: RefSeq Counterpart Check
 GenBank assembly accessions were mapped to their corresponding RefSeq assembly information using the NCBI assembly summary data. This was performed at each filter to identify all the cases of sequence identical genomes that exist on RefSeq. The values have been reported in Figure 1A as well.  
 
-**Script:** `refseq_counterpart_mapping.R`
+**Script:** `Step_5_RefSeq_counterparts/refseq_counterpart_mapping.R`
 
 **Input:**
 1. `Step_5_RefSeq_counterparts/input_files/GenBank_IDs_from_prok.txt` GenBank assembly accession information from the initial prokaryotic genome dataset.
